@@ -68,10 +68,10 @@ iterateDictionary2('last_name', students)
 # 4. Iterate Through a Dictionary with List Values
 
 def printInfo(some_dict):
-    for each_key in some_dict:
-        print(f"{len(each_key)} {each_key.upper()}")
-        for index in each_key:
-            print(each_key[index])
+    for key, val in some_dict.items():
+        print(f"{len(val)} {key.upper()}")
+        for index in val:
+            print(index)
 
 
 dojo = {
